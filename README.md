@@ -1,2 +1,2 @@
 # Mommyware~
-- Passionate scripter, making scripts for my friends.
+- Passionate scripter, Making scripts for my friends.
