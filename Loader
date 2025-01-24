@@ -1,1 +1,45 @@
---
+-- // Do not execute this directly, Visit: https://github.com/MommyW6/Main/blob/home/README.md
+repeat task.wait(0.1) until game:IsLoaded();
+
+-- // Global Variables \\ --
+getgenv().CurrentVersion = "1.25";getgenv().ScriptVersion = "1.25";
+getgenv().MainIcon = "http://www.roblox.com/asset/?id=100500296638402";
+
+---------- // Discord Inviter \\ -------------------------------------------------------------------------------------
+-- if isfile("MommywareDiscordInviter") then if math.random(1,100) <= 10 then delfile("MommywareDiscordInviter") end end;
+----------------------------------------------------------------------------------------------------------------------
+
+-- // Dependencies \\ --
+local Invite = "UnknownDiscordLink";
+local Repository = "https://raw.githubusercontent.com/MommyW6/Main/home/";
+local Discord = loadstring(game:HttpGet("https://raw.githubusercontent.com/MommyW6/Resorces/main/DiscordInviter"))();
+local Return = loadstring(game:HttpGet("https://raw.githubusercontent.com/MommyW6/Return/home/SameOldPlace"))();
+local Scr = loadstring(game:HttpGet("https://raw.githubusercontent.com/MommyW6/Resorces/main/Debugger"))();
+local Files = {
+    ["Untitled Gym Game"] = {
+        File = "UG.lua",
+        Places = {14708751132};
+    },
+    ["Stands Awakening"] = {
+        File = "SA.lua",
+        Places = {5780309044};
+    },
+    ["Project Menacing"] = {
+        File = "PM.lua",
+        Places = {17740608247};
+    },
+    ["Sakura Stand"] = {
+        File = "SS.lua",
+        Places = {8534845015,15552367548};
+    },
+    ["Second Piece"] = {
+        File = "SP.lua",
+        Places = {15049111150};
+    },
+};
+
+-- // Loading Source \\ --
+getgenv().Credits = "Unknown"; -- // Credits.
+if setfflag then setfflag("AbuseReportScreenshot","False");setfflag("AbuseReportScreenshotPercentage",0) end; -- // Anti abuse report.
+local function LoadFile(b)for c,d in pairs(Files)do if table.find(d.Places,b)then Scr:Notify("Warning","Trying to load "..c.."...",1.5)local e=Repository..d.File;local f,g=pcall(game.HttpGet,game,e)if f and g then local h,i=loadstring(g)if h then local j,k=pcall(h)if j then Scr:Notify("Success","Successfully loaded: "..c,1.5)else Scr:Notify("Error","Execution failed: "..k,1.5)end else Scr:Notify("Error","Error loading: "..c,1.5)end else Scr:Notify("Warning","Failed to fetch script for: "..c,1.5)end;return end end;
+Scr:Notify("Warning","What exactly are you doing?",5)end;LoadFile(game.PlaceId);
