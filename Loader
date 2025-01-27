@@ -3,7 +3,7 @@ repeat task.wait(0.1) until game:IsLoaded();
 
 -- // Global Variables \\ --
 getgenv().CurrentVersion = "1.25";getgenv().ScriptVersion = "1.25";
-getgenv().MainIcon = "http://www.roblox.com/asset/?id=100500296638402";
+getgenv().MainIcon = "http://www.roblox.com/asset/?id=113456235202";
 
 ---------- // Discord Inviter \\ -------------------------------------------------------------------------------------
 -- if isfile("MommywareDiscordInviter") then if math.random(1,100) <= 10 then delfile("MommywareDiscordInviter") end end;
