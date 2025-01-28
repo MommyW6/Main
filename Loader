@@ -42,4 +42,4 @@ local Files = {
 getgenv().Credits = "Unknown"; -- // Credits.
 if setfflag then setfflag("AbuseReportScreenshot","False");setfflag("AbuseReportScreenshotPercentage",0) end; -- // Anti abuse report.
 local function LoadFile(b)for c,d in pairs(Files)do if table.find(d.Places,b)then Scr:Notify("Info","Loading: "..c.."...",1.5)Scr:Notify("Warning","Checking Whitelist...",1.5)local e=Repository..d.File;local f,g=pcall(game.HttpGet,game,e)if f and g then local h,i=loadstring(g)if h then local j,k=pcall(h)if j then Scr:Notify("Success","Successfully loaded: "..c,1.5)else Scr:Notify("Error","Error: "..k,3)end else Scr:Notify("Error","Error loading: "..c,3)end else Scr:Notify("Warning","Failed to fetch script for: "..c,1.5)end;return end end;
-Scr:Notify("Warning","What exactly are you doing?",5)end;LoadFile(game.PlaceId);
+Scr:Notify("Error","What exactly are you doing?",5)end;LoadFile(game.PlaceId);
