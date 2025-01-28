@@ -119,7 +119,7 @@ FarmingTab:Toggle({Title = "Auto Use Energy Drink",Desc = "This will equip and u
     end 
 end,})
 
-FarmingTab:Dropdown({Title = "Select Difficulty",Desc = "Select your difficulty for the boxing machine.",Multi = false,Value = "Easy",AllowNone = true,Values = {"Easy","Medium","Hard","Extreme","Insanity","Godly","Mike Tyson"},Callback = function(DropdownValue)
+FarmingTab:Dropdown({Title = "Select Difficulty",Desc = "Select your difficulty for the boxing machine.",Multi = false,Value = "Easy",AllowNone = true,Values = {"Easy","Medium","Hard","Extreme","Insanity","Godly","Mike tyson"},Callback = function(DropdownValue)
     WindUI:Notify({Title = "Mommyware "..tostring(getgenv().CurrentVersion),Content = "Selected: "..DropdownValue,Duration = 1.5});
     getgenv().SelectedDifficulty = DropdownValue;
 end})
@@ -155,8 +155,8 @@ FarmingTab:Toggle({Title = "Auto Use Boxing Machine",Desc = "This will use your 
     elseif getgenv().SelectedDifficulty == "Godly" then
         local GodlyProx = BoxingPath.Base.Godly;
         GodlyProx.HoldDuration = 0;GodlyProx:InputHoldBegin();GodlyProx:InputHoldEnd();
-    elseif getgenv().SelectedDifficulty == "Mike Tyson" then
-        local TysonProx = BoxingPath.Base["Mike Tyson"];
+    elseif getgenv().SelectedDifficulty == "Mike tyson" then
+        local TysonProx = BoxingPath.Base["Mike tyson"];
         TysonProx.HoldDuration = 0;TysonProx:InputHoldBegin();TysonProx:InputHoldEnd();
     end
 
