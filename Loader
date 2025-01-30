@@ -14,7 +14,7 @@ local Invite = "UnknownDiscordLink";
 local Repository = "https://raw.githubusercontent.com/MommyW6/Main/home/";
 local Discord = loadstring(game:HttpGet("https://raw.githubusercontent.com/MommyW6/Resorces/main/DiscordInviter"))();
 local Return = loadstring(game:HttpGet("https://raw.githubusercontent.com/MommyW6/Return/home/SameOldPlace"))();
-local Scr = loadstring(game:HttpGet("https://raw.githubusercontent.com/MommyW6/Resorces/main/Debugger"))();
+local Scr = loadstring(game:HttpGet("https://raw.githubusercontent.com/MommyW6/Resorces/main/DebuggerV2"))();
 local Files = {
     ["Untitled Gym Game"] = {
         File = "UG.lua",
@@ -41,5 +41,5 @@ local Files = {
 -- // Loading Source \\ --
 getgenv().Credits = "Unknown"; -- // Credits.
 if setfflag then setfflag("AbuseReportScreenshot","False");setfflag("AbuseReportScreenshotPercentage",0) end; -- // Anti abuse report.
-local function LoadFile(b)for c,d in pairs(Files)do if table.find(d.Places,b)then Scr:Notify("Warning","Checking Authentication...",3.15);local e=Repository..d.File;local f,g=pcall(game.HttpGet,game,e)if f and g then local h,i=loadstring(g)if h then local j,k=pcall(h)if j then Scr:Notify("Success","Successfully Authenticated",4.25);Scr:Notify("Success","Successfully loaded: "..c,2.15)else Scr:Notify("Error","Execution failed: "..k,3)end else Scr:Notify("Error","Failed to execute: "..c,3)end else Scr:Notify("Warning","Unable to retrieve: "..c,1.5)end;return end end;
-Scr:Notify("Error","Unauthorized attempt detected",5)end;LoadFile(game.PlaceId);
+local function LoadFile(b)for c,d in pairs(Files)do if table.find(d.Places,b)then getgenv().Debug("⚠️"..string.rep(" ",3).."Checking Authentication...",3.5);local e=Repository..d.File;local f,g=pcall(game.HttpGet,game,e)if f and g then local h,i=loadstring(g)if h then local j,k=pcall(h)if j then task.spawn(function()getgenv().Debug("🟢"..string.rep(" ",3).."Successfully Authenticated!",4.25)end)task.spawn(function()getgenv().Debug("🎮"..string.rep(" ",2.15).."Successfully loaded: "..c,3)end)else getgenv().Debug("🔴"..string.rep(" ",3).."Execution failed: "..k,3)end else getgenv().Debug("🔴"..string.rep(" ",3).."Failed to execute: "..c,3)end else getgenv().Debug("⚠️"..string.rep(" ",3).."Unable to retrieve: "..c,1.5)end;return end end;
+getgenv().Debug("🔴"..string.rep(" ",3).."Unauthorized attempt detected!",4.25)end;LoadFile(game.PlaceId);
