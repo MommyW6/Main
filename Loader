@@ -5,14 +5,8 @@ repeat task.wait(0.1) until game:IsLoaded();
 getgenv().CurrentVersion = "1.25";getgenv().ScriptVersion = "1.25";
 getgenv().MainIcon = "http://www.roblox.com/asset/?id=11345623520";
 
----------- // Discord Inviter \\ -------------------------------------------------------------------------------------
--- if isfile("MommywareDiscordInviter") then if math.random(1,100) <= 10 then delfile("MommywareDiscordInviter") end end;
-----------------------------------------------------------------------------------------------------------------------
-
 -- // Dependencies \\ --
-local Invite = "UnknownDiscordLink";
 local Repository = "https://raw.githubusercontent.com/MommyW6/Main/home/";
-local Discord = loadstring(game:HttpGet("https://raw.githubusercontent.com/MommyW6/Resorces/main/DiscordInviter"))();
 local Return = loadstring(game:HttpGet("https://raw.githubusercontent.com/MommyW6/Return/home/SameOldPlace"))();
 local Scr = loadstring(game:HttpGet("https://raw.githubusercontent.com/MommyW6/Resorces/main/DebuggerV2"))();
 local Files = {
