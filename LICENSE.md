@@ -1,6 +1,6 @@
 # Custom License
 
-© 2025 MommyW6    **All rights reserved** 
+Copyright (c) 2025 MommyW6   **All rights reserved** 
 
 This software is  **proprietary and confidential**.. Any unauthorized **copying, distribution, modification, reverse engineering, or use** of this software, in whole or in part, is **strictly prohibited**.
 
