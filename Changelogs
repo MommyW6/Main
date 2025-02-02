@@ -6,6 +6,7 @@ getgenv().ProjectMenacingStatus = "Operational - Last Update: 29/01/2025";
 getgenv().StandsAwakeningStatus = "Operational - Last Update: 23/12/2024";
 getgenv().SecondPieceStatus = "Operational - Last Update: 22/01/2025";
 getgenv().UntitledGymGameStatus = "Operational - Last Update: 29/01/2025";
+getgenv().AUniversalTimeGameStatus = "Operational - Last Update: 02/02/2025";
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- Webhooks soon?~
@@ -22,6 +23,16 @@ ChangelogsSection1:Divider();
 
 -- // Changelogs Maker
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ChangelogsSection1:Paragraph({Header = "Mommyware 1.26 [A Universal Time]",Body = "* The following changes:"});
+
+ChangelogsSection1:SubLabel({Text = "- Added script, Its in BETA~"});
+
+ChangelogsSection1:Label({Text = "It takes some time to update~"});
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ChangelogsSection1:Divider();
 ChangelogsSection1:Paragraph({Header = "Mommyware 1.25 [Untitled Gym Game]",Body = "* The following changes:"});
 
 ChangelogsSection1:SubLabel({Text = "- Added Mike Tyson Difficulty~"});
@@ -459,6 +470,7 @@ ChangelogsSection2:Header({Text = "Supported Games"});
 
 ChangelogsSection2:Divider();
 
+ChangelogsSection2:Paragraph({Header = "* A Universal Time",Body = getgenv().AUniversalTimeGameStatus});
 ChangelogsSection2:Paragraph({Header = "* Untitled Gym Game",Body = getgenv().UntitledGymGameStatus});
 ChangelogsSection2:Paragraph({Header = "* Sakura Stand",Body = getgenv().SakuraStandStatus});
 ChangelogsSection2:Paragraph({Header = "* Second Piece",Body = getgenv().SecondPieceStatus});
