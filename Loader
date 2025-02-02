@@ -1,6 +1,5 @@
+-- // Private Script, Do not attempt to use // https://github.com/MommyW6/Main/blob/home/LICENSE.md
 repeat task.wait(0.1) until game:IsLoaded();
-
--- // Global Variables \\ --
 getgenv().CurrentVersion = "1.25";getgenv().ScriptVersion = "1.25";
 getgenv().MainIcon = "http://www.roblox.com/asset/?id=11345623520";
 
