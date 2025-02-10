@@ -1,7 +1,7 @@
 -- // Changelogs \\ [This will be edited any time an update occurs] --
 
 -- // [Status]
-getgenv().SakuraStandStatus = "Operational - Last Update: 27/12/2024";
+getgenv().SakuraStandStatus = "Operational - Last Update: 10/02/2025";
 getgenv().ProjectMenacingStatus = "Operational - Last Update: 29/01/2025";
 getgenv().StandsAwakeningStatus = "Operational - Last Update: 23/12/2024";
 getgenv().SecondPieceStatus = "Operational - Last Update: 22/01/2025";
@@ -24,6 +24,15 @@ ChangelogsSection1:Divider();
 -- // Changelogs Maker
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+ChangelogsSection1:Paragraph({Header = "Mommyware 1.27 [Sakrua Stand]",Body = "* The following changes:"});
+
+ChangelogsSection1:SubLabel({Text = "- Added support for the new event~"});
+
+ChangelogsSection1:Label({Text = "It takes some time to update~"});
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ChangelogsSection1:Divider();
 ChangelogsSection1:Paragraph({Header = "Mommyware 1.26 [A Universal Time]",Body = "* The following changes:"});
 
 ChangelogsSection1:SubLabel({Text = "- Added script, Its in BETA~"});
