@@ -10,11 +10,10 @@
 
 getgenv().CopyrightHolder = "MommyW6©";
 repeat task.wait(0.1) until game:IsLoaded();
+
+-- // Importants \\ --
 getgenv().MainIcon = "http://www.roblox.com/asset/?id=11345623520";
 getgenv().MobileIcon = "http://www.roblox.com/asset/?id=17767120765";
-
--- // Checks Device \\ --
-local PC = table.find({Enum.Platform.Windows,Enum.Platform.OSX},game:GetService("UserInputService"):GetPlatform());
 
 -- // Dependencies \\ --
 local Repository = "https://raw.githubusercontent.com/MommyW6/Main/home/";
@@ -54,4 +53,4 @@ local function LoadFile(b)for c,d in pairs(Files)do if table.find(d.Places,b)the
 getgenv().Debug("🔐"..string.rep(" ",3).."Unsupported Game Detected!",4.25)end;LoadFile(game.PlaceId);
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-pcall(function() if getgenv().RainbowUI or getgenv().NeonUI then loadstring(game:HttpGet("https://raw.githubusercontent.com/MommyW6/Resorces/home/CustomThemes"))(); end if getgenv().Settings["General"]["MobileSupport"] == true or not PC then getgenv().Window:Notify({Title = Window.Settings.Title,Description = "Loaded Mobile Support",Lifetime = 3,});getgenv().Window:SetScale(1);getgenv().Window:SetSize(UDim2.fromOffset(751,400));game.CoreGui.Mommyware.Base.Content.Size = UDim2.new(0,507,1,0);game.CoreGui.Mommyware.Base.BaseUICorner.CornerRadius = UDim.new(0,20);else game.CoreGui.Mommyware.Base.Content.Size = UDim2.new(0,614,1,0);game.CoreGui.Mommyware.Base.BaseUICorner.CornerRadius = UDim.new(0,10);end end)
+pcall(function() if getgenv().RainbowUI or getgenv().NeonUI then loadstring(game:HttpGet("https://raw.githubusercontent.com/MommyW6/Resorces/home/CustomThemes"))(); end if getgenv().Settings["General"]["MobileSupport"] == true then getgenv().Window:Notify({Title = Window.Settings.Title,Description = "Loaded Mobile Support",Lifetime = 3,});getgenv().Window:SetScale(1);getgenv().Window:SetSize(UDim2.fromOffset(751,400));game.CoreGui.Mommyware.Base.Content.Size = UDim2.new(0,507,1,0);game.CoreGui.Mommyware.Base.BaseUICorner.CornerRadius = UDim.new(0,20);else game.CoreGui.Mommyware.Base.Content.Size = UDim2.new(0,614,1,0);game.CoreGui.Mommyware.Base.BaseUICorner.CornerRadius = UDim.new(0,10);end end)
