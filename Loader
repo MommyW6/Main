@@ -16,7 +16,7 @@ getgenv().MainIcon = "http://www.roblox.com/asset/?id=11345623520";
 getgenv().MobileIcon = "http://www.roblox.com/asset/?id=17767120765";
 
 -- // Dependencies \\ --
-local Repository = "https://raw.githubusercontent.com/MommyW6/Main/home/";
+local Repository = "https://raw.githubusercontent.com/MommyW6/Main/home/Scripts";
 local Return = loadstring(game:HttpGet("https://raw.githubusercontent.com/MommyW6/Return/home/SameOldPlace"))();
 local Scr = loadstring(game:HttpGet("https://raw.githubusercontent.com/MommyW6/Resorces/main/DebuggerV2"))();
 local Files = {
